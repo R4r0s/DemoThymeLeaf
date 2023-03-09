@@ -1,0 +1,72 @@
+openapi: "3.0.0"
+paths:
+  /characters:
+    get:
+      summary: List all characters
+      operationId: listCharacters
+      tags:
+        - characters
+      parameters:
+        - name: limit
+          in: query
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Create a character
+      operationId: createCharacter
+      responses:
+        '200':
+          description: OK
+  /characters/{uuid}:
+    get:
+      summary: Info for a specific character
+      operationId: showCharacterByUuid
+      responses:
+        '200':
+          description: OK
+    put:
+      summary: Updates a given character
+      operationId: updateCharacter
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Deletes a given character
+      operationID: deleteCharacter
+      responses:
+        '200':
+          description: OK
+
+components:
+  schemas:
+    Characters:
+      type: object
+      required:
+        - uuid
+        - name
+      properties:
+        id:
+          type: integer
+          format: int64
+        uuid:
+          type: UUID
+        name:
+          type: string
+        className:
+          type: string
+        stats:
+          type: HashMap
+        alignment:
+          type: string
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
