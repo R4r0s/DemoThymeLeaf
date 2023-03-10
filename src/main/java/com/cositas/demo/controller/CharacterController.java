@@ -3,16 +3,11 @@ package com.cositas.demo.controller;
 import com.cositas.demo.controller.DTO.CharacterDTO;
 import com.cositas.demo.service.CharacterService;
 import com.cositas.demo.service.PdfGenerator;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.w3c.dom.Document;
-
-import javax.print.attribute.standard.Media;
-import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
 

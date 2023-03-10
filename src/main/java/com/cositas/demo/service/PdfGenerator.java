@@ -2,12 +2,10 @@ package com.cositas.demo.service;
 
 import com.cositas.demo.controller.DTO.CharacterDTO;
 import org.springframework.stereotype.Service;
-import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
-import org.w3c.dom.Document;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
 import java.io.*;

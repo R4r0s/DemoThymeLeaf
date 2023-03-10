@@ -2,10 +2,6 @@ package com.cositas.demo.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.Type;
-
-import java.util.HashMap;
-import java.util.List;
 import java.util.UUID;
 
 @Getter
