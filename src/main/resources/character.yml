@@ -37,6 +37,13 @@ paths:
       responses:
         '200':
           description: OK
+  /characters/pdf/{uuid}:
+    get:
+      summary: Returns a pdf with the information of a given characters
+      operationId: generatePDF
+      responses:
+        '200':
+          description: OK
 
 components:
   schemas:
@@ -55,8 +62,6 @@ components:
           type: string
         className:
           type: string
-        stats:
-          type: HashMap
         alignment:
           type: string
     Error:
