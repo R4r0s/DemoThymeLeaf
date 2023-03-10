@@ -10,7 +10,7 @@ public interface CharacterServiceInterface {
 
     Character createCharacter(CharacterDTO characterDTO);
     Character updateCharacter(CharacterDTO characterDTO);
-    Character removeCharacter(UUID uuid);
-    Character getCharacter(UUID uuid);
+    void removeCharacter(UUID uuid);
+    CharacterDTO getCharacter(UUID uuid);
     List<CharacterDTO> getAllCharacters();
 }

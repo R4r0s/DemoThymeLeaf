@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Character Details</title>
+
+
+</head>
+
+<body>
+
+<img class="logo" src="images/dungeons-and-dragons.png"/>
+
+<div>
+
+    <p>Character UUID : <span th:text="${uuid}"></span></p>
+
+    <p>Name : <span th:text="${name}"></span></p>
+
+    <p>Class : <span th:text="${className}"></span></p>
+
+    <!-- <p>Stats : <span th:text="${stats}"></span></p> -->
+
+    <p>Alignment : <span th:text="${alignment}"></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -5,6 +5,7 @@ import lombok.*;
 import org.hibernate.annotations.Type;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.UUID;
 
 @Getter
@@ -14,7 +15,7 @@ import java.util.UUID;
 @ToString
 @NoArgsConstructor
 @Entity
-@Table(name = "roles")
+@Table(name = "characters")
 public class Character {
     @Id
     @GeneratedValue
@@ -30,18 +31,18 @@ public class Character {
     @Column(name = "class", nullable = false)
     private String className;
 
-    @Column(name = "stats", nullable = false)
-    private HashMap<String, Integer> stats;
+    //@Column(name = "stats", nullable = false)
+    //private List<Integer> stats;
 
     @Column(name = "alignment", nullable = false)
     private String alignment;
 
-    public Character(long id, UUID uuid, String name, String className, HashMap<String, Integer> stats, String alignment) {
+    public Character(long id, UUID uuid, String name, String className, /*List<Integer> stats,*/ String alignment) {
         this.id = id;
         this.uuid = uuid;
         this.name = name;
         this.className = className;
-        this.stats = stats;
+        //this.stats = stats;
         this.alignment = alignment;
     }
 }

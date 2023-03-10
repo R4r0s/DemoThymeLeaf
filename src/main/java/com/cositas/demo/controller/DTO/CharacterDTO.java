@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.UUID;
 
 @Data
@@ -16,6 +17,6 @@ public class CharacterDTO {
     private UUID uuid;
     private String name;
     private String className;
-    private HashMap<String, Integer> stats;
+   // private List<Integer> stats;
     private String alignment;
 }
